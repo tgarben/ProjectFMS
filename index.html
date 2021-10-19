@@ -3,11 +3,21 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8" />
 
   </head>
   <body>
-    <script src="sketch.js"></script>
+    <script src="index.js"></script>
+    <div class="topBanner">
+      <p class="titleText">Project FMS:</p>
+      <p class="menuText">Main Menu:</p>
+    </div>
+    <div>
+      <button class="MenuButton" onclick="popUpAction()">Game 1</button>
+      <button class="MenuButton" onclick="popUpAction()">Game 2</button>
+      <button class="MenuButton" onclick="popUpAction()">Game 3</button>
+      <button class="MenuButton" onclick="moveToGamePong()">Game: Pong</button>
+    </div>
   </body>
 </html>
