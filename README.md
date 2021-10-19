@@ -1,7 +1,9 @@
 # ProjectFMS
 FSE100 Project FMS
 
-Group Members:
+# Group Members:
 @brae02
+
 Paul Miller
+
 Sevag Boghossian
