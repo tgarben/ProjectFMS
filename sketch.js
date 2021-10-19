@@ -20,7 +20,7 @@ var started = false;
 
 
 function setup() {
-    var gameHeight = windowHeight;
+    var gameHeight = windowHeight - 200;
     createCanvas(windowWidth, gameHeight);
     //Enter RGB Color
     background(252,228,236);
@@ -38,7 +38,7 @@ function setup() {
     fill(255,0,255);
     noStroke();
     ellipse(xBall,yBall,diameter);
-    var gameHeight = windowHeight;
+    var gameHeight = windowHeight - 200;
 
     xBall += xBallChange;
     yBall += yBallChange;
@@ -66,4 +66,7 @@ function setup() {
     rect(playerXpaddle, winMouseY - 50,playerPaddleWidth,playerPaddleHeight);
     rect(compXpaddle, compYpaddle,compPaddleWidth,compPaddleHeight);
 
+  }
+  function backToMain(){
+      window.location.href = "../index.html"
   }
