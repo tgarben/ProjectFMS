@@ -44,7 +44,16 @@ function setup() {
 
   //TODO: WORK ON DELAYED COMPUTER MOVEMENT TO MAKE IT POSSIBLE TO WIN
   function compMovement(){
-    compYpaddle = random(0.5, 0.8)*(yBall - 50);
+    // compYpaddle = random(0.5, 0.8)*(yBall - 50);
+    // compYpaddle = ((yBall - (compYpaddle + compPaddleHeight / 2))) * 0.8;
+    if((compYpaddle+50)<yBall){
+        compYpaddle = compYpaddle + (random(3, 7));
+        // random(0.5, 0.8)
+    }
+    if((compYpaddle+50)>yBall){
+        compYpaddle = compYpaddle - (random(3, 7));
+        // random(3, 7)
+    }
   }
   
   function draw() {
