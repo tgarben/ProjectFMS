@@ -32,7 +32,7 @@ function setup() {
     var gameHeight = windowHeight - 200;
     createCanvas(windowWidth, gameHeight);
     //Enter RGB Color
-    background(252,228,236);
+    background(33,33,33);
 
     //playerPaddle = createCanvas(10,100);
     //background(0,0,0);
@@ -57,8 +57,8 @@ function setup() {
   }
   
   function draw() {
-    background(252,228,236);
-    fill(255,0,255);
+    background(33,33,33);
+    fill(236,239,241);
     noStroke();
     ellipse(xBall,yBall,diameter);
     var gameHeight = windowHeight - 200;
@@ -101,6 +101,7 @@ function setup() {
     if (started){
         // setTimeout(() => {  compYpaddle = (yBall - 50); }, 1000);
         compMovement();
+        // ballMovement();
     }
 
     if (!started){
@@ -111,7 +112,13 @@ function setup() {
         compXpaddle = 75;
         compYpaddle = windowHeight / 2;
 
-        started = true;
+
+        started = true
+        rerack();
+        // setTimeout(function (){
+        //     started = true;
+        //   }, 3000);
+
     }
 
     playerYpaddle = winMouseY - 50;
@@ -139,18 +146,18 @@ function setup() {
         }
     }
 
-    fill(0,255,255);
+    fill(120,144,156);
     noStroke();
     rect(playerXpaddle,playerYpaddle ,playerPaddleWidth,playerPaddleHeight);
     rect(compXpaddle, compYpaddle,compPaddleWidth,compPaddleHeight);
 
-    fill(0,255,255);
-    textSize(24);
-    text("Opponent Score: " + compScore, 10,25);
+    // fill(238,238,238);
+    // textSize(24);
+    // text("Opponent Score: " + compScore, 10,20);
 
-    fill(33,33,33);
-    textSize(24);
-    text("Player Score: " + playerScore, windowWidth-195,25);
+    fill(238,238,238);
+    textSize(30);
+    text("" + compScore + " | " + playerScore + "", windowWidth/2,35);
 
     // print(yBall);
     print(playerYpaddle);
@@ -158,6 +165,13 @@ function setup() {
   }
   function backToMain(){
       window.location.href = "../index.html"
+  }
+
+  function ballMovement(){
+    // var xBallChange = 5;
+    xBallChange = 6;
+    // var yBallChange = 5;
+    yBallChange = 6;
   }
 
   function rerack(){

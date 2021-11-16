@@ -5,7 +5,7 @@
   }
 .MenuButton:hover {
     background-color: darkgray;
-    color: white;
+    color: black;
 }
 .titleText{
     font-size: 40px;
@@ -26,4 +26,20 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+.lineTraceButton:hover{
+    background-image: url(/Assets/lineTrace.jpg);
+}
+.pongButton:hover{
+    background-image: url(/Assets/pongImage.jpg);
+    color: white;
+}
+.typingButton:hover{
+    background-image: url(/Assets/typingImage.jpg);
+    color: white;
+}
+.WAMButton:hover{
+    background-image: url(/Assets/WAMImage.jpg);
+    color: white;
 }
