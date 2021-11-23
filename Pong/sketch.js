@@ -2,10 +2,11 @@ var xBall = Math.floor(Math.random() * 300) + 50;
 var yBall = 50;
 var diameter = 15;
 
-// var xBallChange = 5;
-var xBallChange = 6;
-// var yBallChange = 5;
-var yBallChange = 6;
+var randomX = (Math.random() * 7) + 5;
+var xBallChange = randomX;
+
+var randomY = (Math.random() * 7) + 5;
+var yBallChange = randomY;
 
 
 var playerXpaddle;
@@ -168,10 +169,16 @@ function setup() {
   }
 
   function ballMovement(){
-    // var xBallChange = 5;
-    xBallChange = 6;
-    // var yBallChange = 5;
-    yBallChange = 6;
+    // // var xBallChange = 5;
+    // xBallChange = 6;
+    // // var yBallChange = 5;
+    // yBallChange = 6;
+
+    var randomX = (Math.random() * 7) + 5;
+    var xBallChange = randomX;
+
+    var randomY = (Math.random() * 7) + 5;
+    var yBallChange = randomY;
   }
 
   function rerack(){
@@ -200,8 +207,14 @@ function setup() {
           // yBallChange *= 1;
           // xBallChange *= 1;
   
-          xBallChange = 6;
-          yBallChange = 6;
+        //   xBallChange = 6;
+        //   yBallChange = 6;
+        var randomX = (Math.random() * 4) + 5;
+        xBallChange = randomX;
+        
+        var randomY = (Math.random() * 4) + 5;
+        yBallChange = randomY;
+
         }, 3000);
       }
   }
