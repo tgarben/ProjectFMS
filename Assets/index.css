@@ -1,0 +1,45 @@
+.MenuButton {
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+  }
+.MenuButton:hover {
+    background-color: darkgray;
+    color: black;
+}
+.titleText{
+    font-size: 40px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+.menuText{
+    padding-left: 5px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.topBanner{
+    background-color: lightgray;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.lineTraceButton:hover{
+    background-image: url(Assets/lineTrace.jpg);
+}
+.pongButton:hover{
+    background-image: url(Assets/pongImage.jpg);
+    color: white;
+}
+.typingButton:hover{
+    background-image: url(Assets/typingImage.jpg);
+    color: white;
+}
+.WAMButton:hover{
+    background-image: url(Assets/WAMImage.jpg);
+    color: white;
+}
