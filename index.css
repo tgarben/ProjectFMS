@@ -29,7 +29,7 @@
 }
 
 .lineTraceButton:hover{
-    background-image: url(/Assets/lineTrace.jpg);
+    background-image: url(../Assets/lineTrace.jpg);
 }
 .pongButton:hover{
     background-image: url(/Assets/pongImage.jpg);
