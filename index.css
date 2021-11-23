@@ -32,14 +32,14 @@
     background-image: url(../Assets/lineTrace.jpg);
 }
 .pongButton:hover{
-    background-image: url(/Assets/pongImage.jpg);
+    background-image: url(../Assets/pongImage.jpg);
     color: white;
 }
 .typingButton:hover{
-    background-image: url(/Assets/typingImage.jpg);
+    background-image: url(../Assets/typingImage.jpg);
     color: white;
 }
 .WAMButton:hover{
-    background-image: url(/Assets/WAMImage.jpg);
+    background-image: url(../Assets/WAMImage.jpg);
     color: white;
 }
