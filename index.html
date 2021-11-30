@@ -3,6 +3,7 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8" />
 
@@ -13,12 +14,13 @@
       <p class="titleText">Project FMS:</p>
       <p class="menuText">Main Menu:</p>
     </div>
-    <div>
+    <div class="buttonArea">
       <button class="MenuButton typingButton" onclick="popUpAction()">Game: Typing Practice</button>
       <button class="MenuButton WAMButton" onclick="popUpAction()">Game: Wack A Mole</button>
       <button class="MenuButton lineTraceButton" onclick="popUpAction()">Game: Line Trace</button>
       <button class="MenuButton pongButton" onclick="moveToGamePong()">Game: Pong</button>
     </div>
-    <img src="Assets/coco.png" style="position: fixed;bottom: 0px;right: 0px;">
+    <!-- <img src="Assets/coco.png" style="position: fixed;bottom: 0px;right: 0px;"> -->
+    <button class="infoButton" onclick="infoButton()"><i style="font-size:35px" class="fa">&#xf05a;</i></button>
   </body>
 </html>

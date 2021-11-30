@@ -17,7 +17,7 @@ function launchFullScreen(element) {
 
 
 function popUpAction(){
-    alert("Button to game\nWIP");
+    alert("No Game Available :(");
 }
 
 function moveToGamePong(){
@@ -31,4 +31,8 @@ function moveToGameType(){
 }
 function moveToGameLineTrace(){
     window.location.href = "Pong/pong.html";
+}
+
+function infoButton(){
+  alert("2021 FSE100\nCreated By: Tyler Garben\nTwitter: @tjg4005\nLinkedIn: https://www.linkedin.com/in/tylergarben");
 }

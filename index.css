@@ -1,7 +1,9 @@
 .MenuButton {
-    width: 200px;
-    height: 75px;
+    width: 24.75%;
+    height: 100%;
     border-radius: 10px;
+    padding: 0px;
+    margin-right: -3px;
   }
 .MenuButton:hover {
     background-color: darkgray;
@@ -11,18 +13,32 @@
     font-size: 40px;
     padding-left: 5px;
     margin-bottom: 15px;
+    color: white;
+    margin-left: 10px;
 }
 .menuText{
     padding-left: 5px;
     font-size: 20px;
     margin: 0px;
+    color: white;
+    margin-left: 10px;
+}
+
+.buttonArea{
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 25px;
+    padding-left: 10px;
+    /* background-color: green; */
+    height: 150px;
 }
 
 .topBanner{
-    background-color: lightgray;
-    width: 100%;
-    margin-left: -5px;
-    margin-top: -20px;
+    background-color: rgb(33,33,33);
+    /* width: 100%; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -25px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -30,16 +46,34 @@
 
 .lineTraceButton:hover{
     background-image: url(Assets/lineTrace.jpg);
+    background-size: cover;
 }
 .pongButton:hover{
     background-image: url(Assets/pongImage.jpg);
     color: white;
+    background-size: contain;
+    background-position: center;
 }
 .typingButton:hover{
     background-image: url(Assets/typingImage.jpg);
     color: white;
+    background-size: cover;
 }
 .WAMButton:hover{
     background-image: url(Assets/WAMImage.jpg);
     color: white;
+    background-size: cover;
+}
+.infoButton{
+    background-color:darkgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+html{
+    background-color: rgb(38,50,56);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
