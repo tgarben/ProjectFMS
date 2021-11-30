@@ -2,17 +2,27 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(38,50,56);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 canvas {
     display: block;
   }
 .backToMain {
   position: fixed;
-  bottom: 30px;
-  left: 20px;
-  width: 200px;
+  bottom: 10px;
+  left: 10px;
+  width: 100px;
   height: 50px;
   border-radius: 10px;
+  }
+
+.restartGame {
+    position: fixed;
+    bottom: 10px;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
   }
 
 .pongTitle{
@@ -26,16 +36,19 @@ canvas {
 
 .instructionLabel{
   position: absolute;
-  right: 25px;
-  bottom: 0px;
+  margin-left: 5px;
+  /* right:px; */
+  top: 0px;
+  color: white;
 }
 
 .bottomDiv{
   position: fixed;
-  background-color: pink;
-  width: 750px;
-  height: 100px;
+  background-color: rgb(120,144,156);
+  width: 275px;
+  height: 125px;
   bottom: 10px;
-  left: 10px;
+  right: 10px;
+  border-radius: 10px;
 }
   

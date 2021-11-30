@@ -1,5 +1,5 @@
 var xBall = Math.floor(Math.random() * 300) + 50;
-var yBall = 50;
+var yBall = 100;
 var diameter = 15;
 
 var randomX = (Math.random() * 7) + 5;
@@ -122,7 +122,7 @@ function setup() {
 
     }
 
-    playerYpaddle = winMouseY - 50;
+    playerYpaddle = winMouseY - 100;
 
     if (playerYpaddle >= gameHeight - 100){
         playerYpaddle = gameHeight - 100;
@@ -158,7 +158,8 @@ function setup() {
 
     fill(238,238,238);
     textSize(30);
-    text("" + compScore + " | " + playerScore + "", windowWidth/2,35);
+    text("" + compScore + " | " + playerScore + "", (windowWidth/2)-24,35);
+    text(".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.", windowWidth/2,35);
 
     // print(yBall);
     print(playerYpaddle);
@@ -166,6 +167,14 @@ function setup() {
   }
   function backToMain(){
       window.location.href = "../index.html"
+  }
+
+  function restartGame(){
+    gameOver = false;
+    playerScore = 0;
+    compScore = 0;
+    rerack();
+
   }
 
   function ballMovement(){
@@ -184,14 +193,14 @@ function setup() {
   function rerack(){
       if (playerScore == 5){
         xBall = windowWidth/2;
-        yBall = 50
+        yBall = 100
         yBallChange *= 0;
         xBallChange *= 0;
         gameOver = true;
       }
       if(compScore == 5){
         xBall = windowWidth/2;
-        yBall = 50
+        yBall = 100
         yBallChange *= 0;
         xBallChange *= 0;
         // text("Computer Wins!", windowWidth/2,200);
@@ -199,7 +208,7 @@ function setup() {
       }
       if(compScore < 5 && playerScore < 5){
         xBall = windowWidth/2;
-        yBall = 50
+        yBall = 100
         yBallChange *= 0;
         xBallChange *= 0;
         gameOver = false;
@@ -209,10 +218,10 @@ function setup() {
   
         //   xBallChange = 6;
         //   yBallChange = 6;
-        var randomX = (Math.random() * 4) + 5;
+        var randomX = (Math.random() * 3) + 5;
         xBallChange = randomX;
         
-        var randomY = (Math.random() * 4) + 5;
+        var randomY = (Math.random() * 3) + 5;
         yBallChange = randomY;
 
         }, 3000);
