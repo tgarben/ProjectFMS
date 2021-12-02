@@ -24,7 +24,7 @@ function moveToGamePong(){
     window.location.href = "Pong/pong.html";
 }
 function moveToGameWAM(){
-    window.location.href = "Pong/pong.html";
+    window.location.href = "WAM/WaM.html";
 }
 function moveToGameType(){
     window.location.href = "Pong/pong.html";
