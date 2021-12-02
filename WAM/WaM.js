@@ -33,7 +33,7 @@ function backToMain(){
 function setup() {
   createCanvas(800, 800);
   mouseClicked();
-  print("Whack-A-Mole")
+  // print("Whack-A-Mole")
   
 xOpts = [160, 400, 640];
 yOpts = [160, 640];
@@ -51,14 +51,9 @@ function checkForWack(){
 function mouseClicked() {
   var distance = int(dist(mouseX, mouseY, ranX, ranY));
 
-  if (distance <= r) {
-    console.log("mole clicked")
+  if ((distance <= r) && (gameOver == false)) {
+    // console.log("mole clicked")
     score++;
-    // console.log(ranX);
-    // console.log(ranY);
-    // wins = wins + 1;
-    // console.log(wins)
-
   };
 };
 
@@ -67,14 +62,11 @@ intervalId = window.setInterval(function() {
 }, 1500);
 
 function changeMole(){
-  console.log("2sec");
-  // clearInterval(intervalId);
+  // console.log("2sec");
   if(endGameState == false){
   ranX = random(xOpts);
   ranY = random(yOpts);
   }
-  // rect(ranX, ranY, 100, 100);
-  // fill(50,200,50);
 }
 
 function restartGame(){
@@ -85,8 +77,6 @@ function restartGame(){
  
 
 function draw() {
-  // ranX = random(xOpts);
-  // ranY = random(yOpts);
   background(220);
   fill(222,184,135);
   circle(160, 160, 160);
@@ -109,44 +99,13 @@ function draw() {
   text("Your score: " + score, 10,30);
 
   if (gameOver == true){
-    if (score == 10){
+    if (score >= 10){
         textSize(30);
         text("You Win!!", 350,350);
         fill(0, 102, 153, 51);
         endGameState = true;
     }
 }
-  // console.log(ranX);
-  // console.log(ranY);
-  
-  // if(whacked = true){
-  // console.log("mole has been whacked");
-  // whacked = false;
-  // }
-  // intervalId = window.setInterval(function() {
-  //   changeMole();
-  // }, 2000);
   checkForWack();
-  
-// if (whacked == false)
-// {
-//   if (mouseIsPressed)
-//   {
-//   let d = dist(mouseX, mouseY, ranX, ranY);
-//      if(d < r) 
-//      {
-//       //  let whacked = true;
-//        console.log("mole has been whacked");
-//         circlex = circle(ranX, ranY, 80);
-//         whacked = false;
-//      }    
-//       else 
-//         { 
-//           console.log("try again") 
-//         }
-    
-//   }
-     
-//   }
 }
 

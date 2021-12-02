@@ -34,5 +34,5 @@ function moveToGameLineTrace(){
 }
 
 function infoButton(){
-  alert("2021 FSE100\nCreated By: Tyler Garben\nTwitter: @tjg4005\nLinkedIn: https://www.linkedin.com/in/tylergarben");
+  alert("2021 FSE100\nCreated By: Tyler Garben & Paul Miller\nTwitter: @tjg4005\nLinkedIn: https://www.linkedin.com/in/tylergarben");
 }

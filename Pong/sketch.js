@@ -48,11 +48,11 @@ function setup() {
     // compYpaddle = random(0.5, 0.8)*(yBall - 50);
     // compYpaddle = ((yBall - (compYpaddle + compPaddleHeight / 2))) * 0.8;
     if((compYpaddle+50)<yBall){
-        compYpaddle = compYpaddle + (random(3, 7));
+        compYpaddle = compYpaddle + (random(3, 8));
         // random(0.5, 0.8)
     }
     if((compYpaddle+50)>yBall){
-        compYpaddle = compYpaddle - (random(3, 7));
+        compYpaddle = compYpaddle - (random(3, 8));
         // random(3, 7)
     }
   }
@@ -63,6 +63,7 @@ function setup() {
     noStroke();
     ellipse(xBall,yBall,diameter);
     var gameHeight = windowHeight - 200;
+    // compMovement();
 
     xBall += xBallChange;
     yBall += yBallChange;
@@ -159,7 +160,7 @@ function setup() {
     fill(238,238,238);
     textSize(30);
     text("" + compScore + " | " + playerScore + "", (windowWidth/2)-24,35);
-    text(".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.", windowWidth/2,35);
+    text(".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.", windowWidth/2,35);
 
     // print(yBall);
     print(playerYpaddle);
